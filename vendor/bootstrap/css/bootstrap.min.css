@@ -10,7 +10,7 @@
  }
  
 #myGraphic {
-  float: center;
+  display: block;
 	vertical-align:top
 	zoom:2;
 	
