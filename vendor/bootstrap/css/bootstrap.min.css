@@ -10,9 +10,9 @@
  }
  
 #myGraphic {
-  float: left;
+  float: center;
 	vertical-align:top
-	zoom:1;
+	zoom:2;
 	
    /* background: black; */
    background: #000000;
