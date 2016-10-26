@@ -11,6 +11,8 @@
  
 #myGraphic {
    display: inline-block;
+	*display:inline;
+	zoom:1;
 	
    /* background: black; */
    background: #000000;
