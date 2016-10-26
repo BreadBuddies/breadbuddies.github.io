@@ -10,7 +10,8 @@
  }
  
 #myGraphic {
-   display: inline-block;
+  float: left;
+	vertical-align:top
 	zoom:1;
 	
    /* background: black; */
