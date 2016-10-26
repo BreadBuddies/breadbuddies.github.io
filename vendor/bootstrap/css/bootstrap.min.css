@@ -10,16 +10,11 @@
  }
  
 #myGraphic {
-   display: -webkit-flex;
-   display:         flex;
-  -webkit-align-items: center;
-          align-items: center;
-  -webkit-justify-content: center;
-          justify-content: center;
+   display: inline-block;
    /* background: black; */
    background: #000000;
    stroke-width: 0px;
-   padding-right: 0px;
+   padding-left: 10%;
    width: 35%;
    height: 35%;
  }
