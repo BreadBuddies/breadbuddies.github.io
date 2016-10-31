@@ -25,6 +25,10 @@
 	<!-- jQuery -->
     <script src="js/jquery.js"></script>
 	
+	<!-- Graph!!!!!! -->
+	
+	
+	
 	
 	<!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
@@ -40,8 +44,12 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+	
 
 </head>
+
+
+
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
@@ -107,12 +115,77 @@
 			</div>
 			<div class="container" id="visualContainer">
 					<div class="progress" id="myGraphic"></div>
-                
+					
+					<br> </br>
+	
+                <h1>Donation Spread</h1>
             </div>
 		
         </div>
     </section>
 	
+	<br> </br>
+	
+	
+	<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawStuff);
+
+      function drawStuff() {
+        var data = new google.visualization.arrayToDataTable([
+		
+		
+		  
+          ['Area', 'Rand'],
+          ["Wing 1", 0],
+          ["Wing 2", 0],
+          ["Wing 3", 292],
+          ["Wing 4", 245],
+          ["At Stander", 0]
+        ]);
+
+        var options = {
+          title: '*Hover over bars',	
+		  titleTextStyle: {color: '#42DCA3'},
+		  fontSize: 20,
+		  colors: ['#1c976a', '#1c976a'],
+		  
+          width: 900,
+		  left: 50,
+          legend: { position: 'none' },	
+		  chartArea: {backgroundColor: 'black'},
+          chart: { subtitle: 'Donations from Techno Park and At Stander Buildings', },
+		  backgroundColor: 'black',
+		  
+		  
+		  
+		  
+          axes: {
+            <!-- x: { -->
+              <!-- 0: { side: 'top', label: 'Donations per Wing'} // Top x-axis. -->
+            <!-- } -->
+          },
+          bar: { groupWidth: "90%" }
+        };
+		
+		
+		
+
+        var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+		
+      };
+    </script>
+  </head>
+  <body>
+  <div class="col-lg-8 col-lg-offset-3">
+    <div id="top_x_div" style="width: 1000px; height: 500px;"></div>
+	</div>	
+  </body>
+</html>
     <!-- Download Section -->
     <!-- <section id="download" class="content-section text-center"> -->
         <!-- <div class="download-section"> -->
@@ -127,9 +200,17 @@
     <!-- </section>	 -->
 
     <!-- Contact Section -->
+	
     <section id="contact" class="container content-section text-center">
+	<br> </br>
+	
+	
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
+			<h2 style="color:#7ee7c1;">22/800 kids sponsored so far..</h2>
+			<br> </br>
+			<br> </br>
+				
                 <h1>Contact Us</h1>
                 <p>Feel free to email us if you require any additional information on the initiative or if you would like to get involved!</p>
                 <p><a href="mailto:Nikira.Soni@sasol.com">Nikira.Soni@sasol.com</a>
