@@ -32,7 +32,7 @@ var progress = new RadialProgressChart('.progress', {
  }
 
  function loop(p) {
-   if (p > 12) {
+   if (p > 28) {
      setTimeout(function() {
        loop(0)
      }, 3000)
