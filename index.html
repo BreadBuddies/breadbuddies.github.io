@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -133,7 +133,6 @@
     <script type="text/javascript">
       google.charts.load('current', {'packages':['bar']});
       google.charts.setOnLoadCallback(drawStuff);
-
       function drawStuff() {
         var data = new google.visualization.arrayToDataTable([
 		
@@ -144,9 +143,8 @@
           ["Wing 2", 1410],
           ["Wing 3", 1929],
           ["Wing 4", 2170],
-          ["At Stander", 1800]
+          ["At Stander", 700]
         ]);
-
         var options = {
           title: '*Hover over bars',	
 		  titleTextStyle: {color: '#42DCA3'},
@@ -173,7 +171,6 @@
 		
 		
 		
-
         var chart = new google.charts.Bar(document.getElementById('top_x_div'));
         chart.draw(data, google.charts.Bar.convertOptions(options));
 		
@@ -207,7 +204,7 @@
 	
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-			<h2 style="color:#7ee7c1;">359/800 kids sponsored so far..</h2>
+			<h2 style="color:#7ee7c1;">315/800 kids sponsored so far..</h2>
 			<br> </br>
 			<br> </br>
 				
