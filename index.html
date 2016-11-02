@@ -133,20 +133,18 @@
     <script type="text/javascript">
       google.charts.load('current', {'packages':['bar']});
       google.charts.setOnLoadCallback(drawStuff);
-
       function drawStuff() {
         var data = new google.visualization.arrayToDataTable([
 		
 		
 		  
           ['Area', 'Rand'],
-          ["Wing 1", 0],
-          ["Wing 2", 0],
-          ["Wing 3", 292],
-          ["Wing 4", 245],
-          ["At Stander", 0]
+          ["Wing 1", 590],
+          ["Wing 2", 860],
+          ["Wing 3", 1559],
+          ["Wing 4", 1860],
+          ["At Stander", 700]
         ]);
-
         var options = {
           title: '*Hover over bars',	
 		  titleTextStyle: {color: '#42DCA3'},
@@ -173,7 +171,6 @@
 		
 		
 		
-
         var chart = new google.charts.Bar(document.getElementById('top_x_div'));
         chart.draw(data, google.charts.Bar.convertOptions(options));
 		
@@ -207,7 +204,7 @@
 	
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-			<h2 style="color:#7ee7c1;">22/800 kids sponsored so far..</h2>
+			<h2 style="color:#7ee7c1;">223/800 kids sponsored so far..</h2>
 			<br> </br>
 			<br> </br>
 				
